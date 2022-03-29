@@ -1,4 +1,5 @@
--- Portal X Remastered
+-- Gui to Lua
+-- Version: 3.2
 
 -- Instances:
 
@@ -25,6 +26,8 @@ local TextLabel_5 = Instance.new("TextLabel")
 local TextLabel_6 = Instance.new("TextLabel")
 local TextLabel_7 = Instance.new("TextLabel")
 local TextLabel_8 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+
 
 --Properties:
 
@@ -872,6 +875,15 @@ TextLabel_8.Text = "Cmd X: pigeon#8951 |  fini#7057 | Curvn#2002"
 TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_8.TextSize = 25.000
 
+TextButton.Parent = PortalXRemastered
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.937681139, 0, 0.392156899, 0)
+TextButton.Size = UDim2.new(0, 86, 0, 74)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Open/Close Script"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
 -- Scripts:
 
 local function ZLBJDPH_fake_script() -- Page1.Dragable 
@@ -964,4 +976,26 @@ local function YQEWK_fake_script() -- Credits_2.Dragable
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
+local function SRGJMHV_fake_script() -- TextButton.Open/Close (PUT ME IN A TEXTBUTTON) 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent["Page 1"].Visible = not script.Parent.Parent["Page 1"].Visible
+	end)
+
+	--                                                               ^
+	--              ^                      
+end
+coroutine.wrap(SRGJMHV_fake_script)()
+local function XWXZN_fake_script() -- nil.Instructions 
+	local script = Instance.new('Script', nil)
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+--------------------------------------------------
+
+end
 coroutine.wrap(YQEWK_fake_script)()
+
