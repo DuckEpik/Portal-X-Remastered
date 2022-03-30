@@ -1,5 +1,5 @@
--- Portal X
--- amogus
+-- Gui to Lua
+-- Version: 3.2
 
 -- Instances:
 
@@ -781,7 +781,7 @@ Owl_2.Font = Enum.Font.SourceSans
 Owl_2.Text = "Duck Hub made by duck e (me)"
 Owl_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Owl_2.TextSize = 14.000
-PrisonLife.MouseButton1Down:connect(function()
+Owl_2.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/DuckEpik/DuckHub/main/Script'),true))()
 end)
 
@@ -796,7 +796,7 @@ Solaris_2.Font = Enum.Font.SourceSans
 Solaris_2.Text = "Domain X"
 Solaris_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Solaris_2.TextSize = 14.000
-PrisonLife.MouseButton1Down:connect(function()
+Solaris_2.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
 end)
 
@@ -984,18 +984,36 @@ local function SRGJMHV_fake_script() -- TextButton.Open/Close (PUT ME IN A TEXTB
 	end)
 
 	--                                                               ^
-	--              ^                      
+	--]]	Change "Credit" to the name of the frame                 ^                      
 end
 coroutine.wrap(SRGJMHV_fake_script)()
 local function XWXZN_fake_script() -- nil.Instructions 
 	local script = Instance.new('Script', nil)
---------------------------------------------------
---------------------------------------------------
---------------------------------------------------
---------------------------------------------------
---------------------------------------------------
---------------------------------------------------
 
+	---Hello! Thank you for using this script originally by Roman On Fire on YouTube!
+
+	--First of all- I'm dumb. I'm taking no credit for this. All credit goes to Roman On Fire.
+
+	--SO!
+
+
+	----- ~Instructions~ -----
+
+	-- 1. Make a TextButton 
+	-- 2. Make a Frame, and rename it Credit (if you don't want to touch the script)
+	--	 or rename it whatever (Menu, Rules) and then in the script you'll see what to do.
+	--3. Customize yer stuff, and make the frame invisible by unchecking "Visible."
+
+	----- ~Done~ -----
+
+	--And again, thank you. You may want to delete this after.
+
+	--- ~~Published by LAClout ~~ ---
+
+	--I don't know if this was already published by anyone else, but I'm sorry if this was.
+
+	--P.S. Publishing this as your own is like saying "I suck at this stuff, so I'mma be a 
+	--	wannabe and say "I made this"
 end
 coroutine.wrap(YQEWK_fake_script)()
 
