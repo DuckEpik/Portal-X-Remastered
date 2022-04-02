@@ -1,5 +1,5 @@
--- Gui to Lua
--- Version: 3.2
+-- read full github page
+-- by duck e
 
 -- Instances:
 
@@ -17,17 +17,21 @@ local Credits = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
 local Owl_2 = Instance.new("TextButton")
 local Solaris_2 = Instance.new("TextButton")
+local ExtraScripts = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
 local Credits_2 = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
 local UIGradient_2 = Instance.new("UIGradient")
-local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel_4 = Instance.new("TextLabel")
 local TextLabel_5 = Instance.new("TextLabel")
 local TextLabel_6 = Instance.new("TextLabel")
 local TextLabel_7 = Instance.new("TextLabel")
 local TextLabel_8 = Instance.new("TextLabel")
-local TextButton = Instance.new("TextButton")
-
+local TextLabel_9 = Instance.new("TextLabel")
+local TextButton_3 = Instance.new("TextButton")
 
 --Properties:
 
@@ -39,7 +43,7 @@ Page1.Parent = PortalXRemastered
 Page1.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Page1.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Page1.BorderSizePixel = 0
-Page1.Position = UDim2.new(0.0471246913, 0, 0.0549019687, 0)
+Page1.Position = UDim2.new(0.0495435819, 0, 0.0392156914, 0)
 Page1.Size = UDim2.new(0, 776, 0, 374)
 
 UICorner.Parent = Page1
@@ -66,9 +70,6 @@ Cmd.Font = Enum.Font.SourceSans
 Cmd.Text = "CMD X"
 Cmd.TextColor3 = Color3.fromRGB(255, 255, 255)
 Cmd.TextSize = 14.000
-Cmd.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
-end)
 
 Solaris.Name = "Solaris"
 Solaris.Parent = Page1
@@ -80,9 +81,6 @@ Solaris.Font = Enum.Font.SourceSans
 Solaris.Text = "Solaris Hub"
 Solaris.TextColor3 = Color3.fromRGB(255, 255, 255)
 Solaris.TextSize = 14.000
-Solaris.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
-end)
 
 Owl.Name = "Owl"
 Owl.Parent = Page1
@@ -94,21 +92,351 @@ Owl.Font = Enum.Font.SourceSans
 Owl.Text = "Owl Hub"
 Owl.TextColor3 = Color3.fromRGB(255, 255, 255)
 Owl.TextSize = 14.000
-Owl.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
-end)
-
 
 FunkyFriday.Name = "Funky Friday"
 FunkyFriday.Parent = Page1
 FunkyFriday.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 FunkyFriday.BackgroundTransparency = 1.000
-FunkyFriday.Position = UDim2.new(0.389659882, 0, 0.218835413, 0)
+FunkyFriday.Position = UDim2.new(0.388371229, 0, 0.218835413, 0)
 FunkyFriday.Size = UDim2.new(0, 141, 0, 50)
 FunkyFriday.Font = Enum.Font.SourceSans
 FunkyFriday.Text = "Funky Friday"
 FunkyFriday.TextColor3 = Color3.fromRGB(255, 255, 255)
 FunkyFriday.TextSize = 14.000
+
+PrisonLife.Name = "Prison Life"
+PrisonLife.Parent = Page1
+PrisonLife.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PrisonLife.BackgroundTransparency = 1.000
+PrisonLife.Position = UDim2.new(0.550419271, 0, 0.218835413, 0)
+PrisonLife.Size = UDim2.new(0, 141, 0, 50)
+PrisonLife.Font = Enum.Font.SourceSans
+PrisonLife.Text = "Prison Life"
+PrisonLife.TextColor3 = Color3.fromRGB(255, 255, 255)
+PrisonLife.TextSize = 14.000
+
+Credits.Name = "Credits"
+Credits.Parent = Page1
+Credits.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Credits.Position = UDim2.new(0.804018497, 0, 0.83915627, 0)
+Credits.Size = UDim2.new(0, 141, 0, 50)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 14.000
+
+TextLabel_2.Parent = Page1
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0760309249, 0, 0.138621509, 0)
+TextLabel_2.Size = UDim2.new(0, 243, 0, 0)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "A roblox script hub by Neolix And Duck e"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 22.000
+
+Owl_2.Name = "Owl"
+Owl_2.Parent = Page1
+Owl_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Owl_2.BackgroundTransparency = 1.000
+Owl_2.Position = UDim2.new(0.0265809298, 0, 0.352525234, 0)
+Owl_2.Size = UDim2.new(0, 141, 0, 50)
+Owl_2.Font = Enum.Font.SourceSans
+Owl_2.Text = "Duck Hub made by duck e (me)"
+Owl_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Owl_2.TextSize = 14.000
+
+Solaris_2.Name = "Solaris"
+Solaris_2.Parent = Page1
+Solaris_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Solaris_2.BackgroundTransparency = 1.000
+Solaris_2.Position = UDim2.new(0.208657697, 0, 0.349851459, 0)
+Solaris_2.Size = UDim2.new(0, 141, 0, 50)
+Solaris_2.Font = Enum.Font.SourceSans
+Solaris_2.Text = "Domain X"
+Solaris_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Solaris_2.TextSize = 14.000
+
+ExtraScripts.Name = "Extra Scripts"
+ExtraScripts.Parent = Page1
+ExtraScripts.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+ExtraScripts.BorderColor3 = Color3.fromRGB(30, 30, 30)
+ExtraScripts.Position = UDim2.new(1.0144608, 0, 0.0612596571, 0)
+ExtraScripts.Size = UDim2.new(0, 356, 0, 327)
+
+ScrollingFrame.Parent = ExtraScripts
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(25, 25, 25)
+ScrollingFrame.Position = UDim2.new(0.0758269206, 0, 0.108520694, 0)
+ScrollingFrame.Size = UDim2.new(0, 329, 0, 272)
+
+TextButton.Parent = ScrollingFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextButton.BackgroundTransparency = 0.500
+TextButton.Position = UDim2.new(0.00616436452, 0, 0.0355279446, 0)
+TextButton.Size = UDim2.new(0, 296, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "OpenGui"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+
+TextButton_2.Parent = ScrollingFrame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextButton_2.BackgroundTransparency = 0.500
+TextButton_2.Position = UDim2.new(0.00616436824, 0, 0.131858215, 0)
+TextButton_2.Size = UDim2.new(0, 296, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Dark Dex"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 14.000
+
+TextLabel_3.Parent = ExtraScripts
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.00561797759, 0, 0.0122324163, 0)
+TextLabel_3.Size = UDim2.new(0, 302, 0, 43)
+TextLabel_3.Font = Enum.Font.GothamBold
+TextLabel_3.Text = "Portal X Remastered"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 25.000
+
+Credits_2.Name = "Credits"
+Credits_2.Parent = PortalXRemastered
+Credits_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Credits_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Credits_2.BorderSizePixel = 0
+Credits_2.Position = UDim2.new(0.357994258, 0, 0.520261467, 0)
+Credits_2.Size = UDim2.new(0, 776, 0, 374)
+Credits_2.Visible = false
+
+UICorner_2.Parent = Credits_2
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(48, 48, 48)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_2.Parent = Credits_2
+
+TextLabel_4.Parent = Credits_2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.0115979379, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0, 328, 0, 59)
+TextLabel_4.Font = Enum.Font.GothamBold
+TextLabel_4.Text = "Portal X Remastered Credits"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 25.000
+
+TextLabel_5.Parent = Credits_2
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.104381442, 0, 0.235294104, 0)
+TextLabel_5.Size = UDim2.new(0, 328, 0, 25)
+TextLabel_5.Font = Enum.Font.GothamBold
+TextLabel_5.Text = " Founder/Main Gui Maker/Dev: Duck e#8184"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 25.000
+
+TextLabel_6.Parent = Credits_2
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0, 0, 0.302139014, 0)
+TextLabel_6.Size = UDim2.new(0, 328, 0, 25)
+TextLabel_6.Font = Enum.Font.GothamBold
+TextLabel_6.Text = "NeoLix#0985"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 25.000
+
+TextLabel_7.Parent = Credits_2
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0, 0, 0.368983924, 0)
+TextLabel_7.Size = UDim2.new(0, 328, 0, 25)
+TextLabel_7.Font = Enum.Font.GothamBold
+TextLabel_7.Text = "Solaris Hub: ???"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 25.000
+
+TextLabel_8.Parent = Credits_2
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0.074742265, 0, 0.435828835, 0)
+TextLabel_8.Size = UDim2.new(0, 328, 0, 25)
+TextLabel_8.Font = Enum.Font.GothamBold
+TextLabel_8.Text = "Owl Hub: CriShoux And Google Crome"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 25.000
+
+TextLabel_9.Parent = Credits_2
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0.143041223, 0, 0.502673745, 0)
+TextLabel_9.Size = UDim2.new(0, 328, 0, 25)
+TextLabel_9.Font = Enum.Font.GothamBold
+TextLabel_9.Text = "Cmd X: pigeon#8951 |  fini#7057 | Curvn#2002"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextSize = 25.000
+
+TextButton_3.Parent = PortalXRemastered
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.Position = UDim2.new(0.937681139, 0, 0.392156899, 0)
+TextButton_3.Size = UDim2.new(0, 86, 0, 74)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "Open/Close Script"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 14.000
+
+-- Scripts:
+
+local function RKMXY_fake_script() -- Page1.Dragable 
+	local script = Instance.new('LocalScript', Page1)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(RKMXY_fake_script)()
+local function JOKEH_fake_script() -- Credits.Open/Close (PUT ME IN A TEXTBUTTON) 
+	local script = Instance.new('LocalScript', Credits)
+
+	script.Parent.MouseButton1Click:connect(function()
+	 script.Parent.Parent.Parent.Credits.Visible = not script.Parent.Parent.Parent.Credits.Visible
+	end)
+	
+	--                                                               ^
+	--]]	Change "Credit" to the name of the frame                 ^                      
+end
+coroutine.wrap(JOKEH_fake_script)()
+local function CEQNJ_fake_script() -- nil.Instructions 
+	local script = Instance.new('Script', nil)
+
+	---Hello! Thank you for using this script originally by Roman On Fire on YouTube!
+	
+	--First of all- I'm dumb. I'm taking no credit for this. All credit goes to Roman On Fire.
+	
+	--SO!
+	
+	
+	----- ~Instructions~ -----
+	
+	-- 1. Make a TextButton 
+	-- 2. Make a Frame, and rename it Credit (if you don't want to touch the script)
+	--	 or rename it whatever (Menu, Rules) and then in the script you'll see what to do.
+	--3. Customize yer stuff, and make the frame invisible by unchecking "Visible."
+	
+	----- ~Done~ -----
+	
+	--And again, thank you. You may want to delete this after.
+	
+	--- ~~Published by LAClout ~~ ---
+	
+	--I don't know if this was already published by anyone else, but I'm sorry if this was.
+	
+	--P.S. Publishing this as your own is like saying "I suck at this stuff, so I'mma be a 
+	--	wannabe and say "I made this"
+end
+coroutine.wrap(CEQNJ_fake_script)()
+local function QTDKBB_fake_script() -- ExtraScripts.Dragable 
+	local script = Instance.new('LocalScript', ExtraScripts)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(QTDKBB_fake_script)()
+local function WKBY_fake_script() -- PortalXRemastered.KeyPress 
+	local script = Instance.new('LocalScript', PortalXRemastered)
+
+	--[[
+		
+		Press Key to Open a GUI Script V2
+		Script By: Theevilem
+		
+		This script works so that when you press a key on your keyboard, it opens a Gui.
+		
+		Put it accordingly into the StarterGui (More info on line 17
+		
+	--]]
+	wait()
+	
+	local Players = game:GetService("Players")
+	local Player = Players.LocalPlayer
+	
+	local Mouse = Player:GetMouse()
+	local Gui = script.Parent -- Set path to whatever Gui you want to open. For Example: script.Parent.Parent.GuiOrFrameName
+	local Open = false
+	
+	function PressP(key) -- Chnage Q to whatever key you desire. Capitals matter. For Example: PressH
+		if (key == "p") then -- Change "q" to whatever letter you use in the line above. Lowercase matters. For Example: "h"
+			if (Open == false) then
+				Gui.Visible = true
+				Open = true
+			elseif (Open == true) then
+				Gui.Visible = false
+				Open = false
+			end
+		end
+	end
+		
+	Mouse.KeyDown:Connect(PressP) -- Make sure (PressQ) matches what you have for line 20. For Example: (PressH)
+end
+coroutine.wrap(WKBY_fake_script)()
+local function ZZTWXX_fake_script() -- Credits_2.Dragable 
+	local script = Instance.new('LocalScript', Credits_2)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(ZZTWXX_fake_script)()
+local function AMVKMB_fake_script() -- TextButton_3.Open/Close (PUT ME IN A TEXTBUTTON) 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.MouseButton1Click:connect(function()
+	 script.Parent.Parent["Page 1"].Visible = not script.Parent.Parent["Page 1"].Visible
+	end)
+	
+	--                                                               ^
+	--]]	Change "Credit" to the name of the frame                 ^                      
+end
+coroutine.wrap(AMVKMB_fake_script)()
+local function PRUHG_fake_script() -- nil.Instructions 
+	local script = Instance.new('Script', nil)
+
+	---Hello! Thank you for using this script originally by Roman On Fire on YouTube!
+	
+	--First of all- I'm dumb. I'm taking no credit for this. All credit goes to Roman On Fire.
+	
+	--SO!
+	
+	
+	----- ~Instructions~ -----
+	
+	-- 1. Make a TextButton 
+	-- 2. Make a Frame, and rename it Credit (if you don't want to touch the script)
+	--	 or rename it whatever (Menu, Rules) and then in the script you'll see what to do.
+	--3. Customize yer stuff, and make the frame invisible by unchecking "Visible."
+	
+	----- ~Done~ -----
+	
+	--And again, thank you. You may want to delete this after.
+	
+	--- ~~Published by LAClout ~~ ---
+	
+	--I don't know if this was already published by anyone else, but I'm sorry if this was.
+	
+	--P.S. Publishing this as your own is like saying "I suck at this stuff, so I'mma be a 
+	--	wannabe and say "I made this"
+end
+coroutine.wrap(PRUHG_fake_script)()
+
+-- button scripts
+Cmd.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+end)
+
+Solaris.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
+end)
+Owl.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
 FunkyFriday.MouseButton1Down:connect(function()
 	local start = tick()
 	local client = game:GetService('Players').LocalPlayer;
@@ -739,281 +1067,22 @@ FunkyFriday.MouseButton1Down:connect(function()
 	library.notify(string.format('Loaded script in %.4f second(s)!\nUsed Http cache: %s', tick() - start, tostring(usedCache)), 3)
 end)
 
-PrisonLife.Name = "Prison Life"
-PrisonLife.Parent = Page1
-PrisonLife.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PrisonLife.BackgroundTransparency = 1.000
-PrisonLife.Position = UDim2.new(0.550419271, 0, 0.218835413, 0)
-PrisonLife.Size = UDim2.new(0, 141, 0, 50)
-PrisonLife.Font = Enum.Font.SourceSans
-PrisonLife.Text = "Prison Life"
-PrisonLife.TextColor3 = Color3.fromRGB(255, 255, 255)
-PrisonLife.TextSize = 14.000
+PrisonLife.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+end)
 
-
-Credits.Name = "Credits"
-Credits.Parent = Page1
-Credits.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Credits.Position = UDim2.new(0.804018497, 0, 0.83915627, 0)
-Credits.Size = UDim2.new(0, 141, 0, 50)
-Credits.Font = Enum.Font.SourceSans
-Credits.Text = "Credits"
-Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
-Credits.TextSize = 14.000
-
-TextLabel_2.Parent = Page1
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0.12757732, 0, 0.138621509, 0)
-TextLabel_2.Size = UDim2.new(0, 243, 0, 0)
-TextLabel_2.Font = Enum.Font.GothamBold
-TextLabel_2.Text = "A roblox script hub by Neolix And Duck e"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextSize = 22.000
-
-Owl_2.Name = "Owl"
-Owl_2.Parent = Page1
-Owl_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Owl_2.BackgroundTransparency = 1.000
-Owl_2.Position = UDim2.new(0.0265809298, 0, 0.352525234, 0)
-Owl_2.Size = UDim2.new(0, 141, 0, 50)
-Owl_2.Font = Enum.Font.SourceSans
-Owl_2.Text = "Duck Hub made by duck e (me)"
-Owl_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Owl_2.TextSize = 14.000
 Owl_2.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/DuckEpik/DuckHub/main/Script'),true))()
 end)
 
-
-Solaris_2.Name = "Solaris"
-Solaris_2.Parent = Page1
-Solaris_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Solaris_2.BackgroundTransparency = 1.000
-Solaris_2.Position = UDim2.new(0.208657697, 0, 0.349851459, 0)
-Solaris_2.Size = UDim2.new(0, 141, 0, 50)
-Solaris_2.Font = Enum.Font.SourceSans
-Solaris_2.Text = "Domain X"
-Solaris_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Solaris_2.TextSize = 14.000
 Solaris_2.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
 end)
 
+TextButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/UXmbai5q", true))()
+end)
 
-Credits_2.Name = "Credits"
-Credits_2.Parent = PortalXRemastered
-Credits_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Credits_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Credits_2.BorderSizePixel = 0
-Credits_2.Position = UDim2.new(0.357994258, 0, 0.520261467, 0)
-Credits_2.Size = UDim2.new(0, 776, 0, 374)
-Credits_2.Visible = false
-
-UICorner_2.Parent = Credits_2
-
-UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(48, 48, 48)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_2.Parent = Credits_2
-
-TextLabel_3.Parent = Credits_2
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(0.0115979379, 0, 0, 0)
-TextLabel_3.Size = UDim2.new(0, 328, 0, 59)
-TextLabel_3.Font = Enum.Font.GothamBold
-TextLabel_3.Text = "Portal X Remastered Credits"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextSize = 25.000
-
-TextLabel_4.Parent = Credits_2
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.Position = UDim2.new(0.104381442, 0, 0.235294104, 0)
-TextLabel_4.Size = UDim2.new(0, 328, 0, 25)
-TextLabel_4.Font = Enum.Font.GothamBold
-TextLabel_4.Text = " Founder/Main Gui Maker/Dev: Duck e#8184"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextSize = 25.000
-
-TextLabel_5.Parent = Credits_2
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.Position = UDim2.new(0, 0, 0.302139014, 0)
-TextLabel_5.Size = UDim2.new(0, 328, 0, 25)
-TextLabel_5.Font = Enum.Font.GothamBold
-TextLabel_5.Text = "NeoLix#0985"
-TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.TextSize = 25.000
-
-TextLabel_6.Parent = Credits_2
-TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.Position = UDim2.new(0, 0, 0.368983924, 0)
-TextLabel_6.Size = UDim2.new(0, 328, 0, 25)
-TextLabel_6.Font = Enum.Font.GothamBold
-TextLabel_6.Text = "Solaris Hub: ???"
-TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.TextSize = 25.000
-
-TextLabel_7.Parent = Credits_2
-TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.BackgroundTransparency = 1.000
-TextLabel_7.Position = UDim2.new(0.074742265, 0, 0.435828835, 0)
-TextLabel_7.Size = UDim2.new(0, 328, 0, 25)
-TextLabel_7.Font = Enum.Font.GothamBold
-TextLabel_7.Text = "Owl Hub: CriShoux And Google Chrome"
-TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.TextSize = 25.000
-
-TextLabel_8.Parent = Credits_2
-TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.BackgroundTransparency = 1.000
-TextLabel_8.Position = UDim2.new(0.143041223, 0, 0.502673745, 0)
-TextLabel_8.Size = UDim2.new(0, 328, 0, 25)
-TextLabel_8.Font = Enum.Font.GothamBold
-TextLabel_8.Text = "Cmd X: pigeon#8951 |  fini#7057 | Curvn#2002"
-TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.TextSize = 25.000
-
-TextButton.Parent = PortalXRemastered
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.Position = UDim2.new(0.937681139, 0, 0.392156899, 0)
-TextButton.Size = UDim2.new(0, 86, 0, 74)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Open/Close Script"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextSize = 14.000
-
--- Scripts:
-
-local function ZLBJDPH_fake_script() -- Page1.Dragable 
-	local script = Instance.new('LocalScript', Page1)
-
-	script.Parent.Active = true
-	script.Parent.Draggable = true
-end
-coroutine.wrap(ZLBJDPH_fake_script)()
-local function YBSRHP_fake_script() -- Credits.Open/Close (PUT ME IN A TEXTBUTTON) 
-	local script = Instance.new('LocalScript', Credits)
-
-	script.Parent.MouseButton1Click:connect(function()
-	 script.Parent.Parent.Parent.Credits.Visible = not script.Parent.Parent.Parent.Credits.Visible
-	end)
-	
-	--                                                               ^
-	--]]	Change "Credit" to the name of the frame                 ^                      
-end
-coroutine.wrap(YBSRHP_fake_script)()
-local function ENEF_fake_script() -- nil.Instructions 
-	local script = Instance.new('Script', nil)
-
-	---Hello! Thank you for using this script originally by Roman On Fire on YouTube!
-	
-	--First of all- I'm dumb. I'm taking no credit for this. All credit goes to Roman On Fire.
-	
-	--SO!
-	
-	
-	----- ~Instructions~ -----
-	
-	-- 1. Make a TextButton 
-	-- 2. Make a Frame, and rename it Credit (if you don't want to touch the script)
-	--	 or rename it whatever (Menu, Rules) and then in the script you'll see what to do.
-	--3. Customize yer stuff, and make the frame invisible by unchecking "Visible."
-	
-	----- ~Done~ -----
-	
-	--And again, thank you. You may want to delete this after.
-	
-	--- ~~Published by LAClout ~~ ---
-	
-	--I don't know if this was already published by anyone else, but I'm sorry if this was.
-	
-	--P.S. Publishing this as your own is like saying "I suck at this stuff, so I'mma be a 
-	--	wannabe and say "I made this"
-end
-coroutine.wrap(ENEF_fake_script)()
-local function MLSYBN_fake_script() -- PortalXRemastered.KeyPress 
-	local script = Instance.new('LocalScript', PortalXRemastered)
-
-	--[[
-		
-		Press Key to Open a GUI Script V2
-		Script By: Theevilem
-		
-		This script works so that when you press a key on your keyboard, it opens a Gui.
-		
-		Put it accordingly into the StarterGui (More info on line 17
-		
-	--]]
-	wait()
-	
-	local Players = game:GetService("Players")
-	local Player = Players.LocalPlayer
-	
-	local Mouse = Player:GetMouse()
-	local Gui = script.Parent -- Set path to whatever Gui you want to open. For Example: script.Parent.Parent.GuiOrFrameName
-	local Open = false
-	
-	function PressP(key) -- Chnage Q to whatever key you desire. Capitals matter. For Example: PressH
-		if (key == "p") then -- Change "q" to whatever letter you use in the line above. Lowercase matters. For Example: "h"
-			if (Open == false) then
-				Gui.Visible = true
-				Open = true
-			elseif (Open == true) then
-				Gui.Visible = false
-				Open = false
-			end
-		end
-	end
-		
-	Mouse.KeyDown:Connect(PressP) -- Make sure (PressQ) matches what you have for line 20. For Example: (PressH)
-end
-coroutine.wrap(MLSYBN_fake_script)()
-local function YQEWK_fake_script() -- Credits_2.Dragable 
-	local script = Instance.new('LocalScript', Credits_2)
-
-	script.Parent.Active = true
-	script.Parent.Draggable = true
-end
-local function SRGJMHV_fake_script() -- TextButton.Open/Close (PUT ME IN A TEXTBUTTON) 
-	local script = Instance.new('LocalScript', TextButton)
-
-	script.Parent.MouseButton1Click:connect(function()
-		script.Parent.Parent["Page 1"].Visible = not script.Parent.Parent["Page 1"].Visible
-	end)
-
-	--                                                               ^
-	--]]	Change "Credit" to the name of the frame                 ^                      
-end
-coroutine.wrap(SRGJMHV_fake_script)()
-local function XWXZN_fake_script() -- nil.Instructions 
-	local script = Instance.new('Script', nil)
-
-	---Hello! Thank you for using this script originally by Roman On Fire on YouTube!
-
-	--First of all- I'm dumb. I'm taking no credit for this. All credit goes to Roman On Fire.
-
-	--SO!
-
-
-	----- ~Instructions~ -----
-
-	-- 1. Make a TextButton 
-	-- 2. Make a Frame, and rename it Credit (if you don't want to touch the script)
-	--	 or rename it whatever (Menu, Rules) and then in the script you'll see what to do.
-	--3. Customize yer stuff, and make the frame invisible by unchecking "Visible."
-
-	----- ~Done~ -----
-
-	--And again, thank you. You may want to delete this after.
-
-	--- ~~Published by LAClout ~~ ---
-
-	--I don't know if this was already published by anyone else, but I'm sorry if this was.
-
-	--P.S. Publishing this as your own is like saying "I suck at this stuff, so I'mma be a 
-	--	wannabe and say "I made this"
-end
-coroutine.wrap(YQEWK_fake_script)()
-
+TextButton_2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://gist.githubusercontent.com/DinosaurXxX/b757fe011e7e600c0873f967fe427dc2/raw/ee5324771f017073fc30e640323ac2a9b3bfc550/dark%2520dex%2520v4"))()
+end)
